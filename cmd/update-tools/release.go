@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/openclaw/nix-openclaw-tools/internal"
+	"github.com/alinaos-org/nix-openclaw-tools/internal"
 )
 
 type Tool struct {

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/openclaw/nix-openclaw-tools/internal"
+	"github.com/alinaos-org/nix-openclaw-tools/internal"
 )
 
 func TestUpdateWacliSelectsNativeArchivesAtomically(t *testing.T) {

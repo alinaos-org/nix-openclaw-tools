@@ -1,3 +1,3 @@
-module github.com/openclaw/nix-openclaw-tools
+module github.com/alinaos-org/nix-openclaw-tools
 
 go 1.22

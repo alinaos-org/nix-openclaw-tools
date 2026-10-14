@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/openclaw/nix-openclaw-tools/internal"
+	"github.com/alinaos-org/nix-openclaw-tools/internal"
 )
 
 var runTimeout = 5 * time.Minute

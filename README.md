@@ -2,7 +2,12 @@
 
 > Reproducible OpenClaw tool packaging.
 
-Nix packaging for OpenClaw-adjacent tools, with per-tool OpenClaw plugin metadata. Part of the [nix-openclaw](https://github.com/openclaw/nix-openclaw) ecosystem.
+Nix packaging for OpenClaw-adjacent tools, with per-tool OpenClaw plugin metadata, for
+[alinaos-org/nix-openclaw](https://github.com/alinaos-org/nix-openclaw) and
+[openclaw-nix](https://github.com/alinaos-org/openclaw-nix). It started from
+[openclaw/nix-openclaw-tools](https://github.com/openclaw/nix-openclaw-tools) (MIT) and is
+maintained here: `update-tools` takes each tool's releases from the tool's own repository, so
+nothing here waits on that repository.
 
 Darwin/aarch64 plus Linux (x86_64/aarch64) for tools that ship Linux builds.
 On Linux, `summarize` is built from source (Node 24 + pnpm 11, matching upstream's package manager) since upstream only ships a macOS Bun binary.
@@ -53,12 +58,12 @@ Each tool is a subflake under `tools/<tool>/` exporting `openclawPlugin`. Point 
 
 ```nix
 programs.openclaw.plugins = [
-  { source = "github:openclaw/nix-openclaw-tools?dir=tools/camsnap"; }
-  { source = "github:openclaw/nix-openclaw-tools?dir=tools/discrawl"; }
-  { source = "github:openclaw/nix-openclaw-tools?dir=tools/peekaboo"; }
-  { source = "github:openclaw/nix-openclaw-tools?dir=tools/summarize"; }
-  { source = "github:openclaw/nix-openclaw-tools?dir=tools/wacrawl"; }
-  { source = "github:openclaw/nix-openclaw-tools?dir=tools/wacli"; }
+  { source = "github:alinaos-org/nix-openclaw-tools?dir=tools/camsnap"; }
+  { source = "github:alinaos-org/nix-openclaw-tools?dir=tools/discrawl"; }
+  { source = "github:alinaos-org/nix-openclaw-tools?dir=tools/peekaboo"; }
+  { source = "github:alinaos-org/nix-openclaw-tools?dir=tools/summarize"; }
+  { source = "github:alinaos-org/nix-openclaw-tools?dir=tools/wacrawl"; }
+  { source = "github:alinaos-org/nix-openclaw-tools?dir=tools/wacli"; }
 ];
 ```
 
@@ -75,7 +80,7 @@ The camsnap executable includes its ffmpeg runtime on PATH, including when you
 invoke it directly from the Nix store.
 
 ```nix
-inputs.nix-openclaw-tools.url = "github:openclaw/nix-openclaw-tools";
+inputs.nix-openclaw-tools.url = "github:alinaos-org/nix-openclaw-tools";
 
 # Then use:
 inputs.nix-openclaw-tools.packages.aarch64-darwin.camsnap

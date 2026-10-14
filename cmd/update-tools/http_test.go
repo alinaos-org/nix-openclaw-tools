@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/openclaw/nix-openclaw-tools/internal"
+	"github.com/alinaos-org/nix-openclaw-tools/internal"
 )
 
 func TestFetchTextHeaderTimeout(t *testing.T) {

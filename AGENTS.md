@@ -1,6 +1,6 @@
 # AGENTS.md — nix-openclaw-tools
 
-This repo packages OpenClaw-adjacent CLI tools and plugin metadata. It is part of the public OpenClaw Nix packaging boundary, not Josh's private machine config.
+This repo packages OpenClaw-adjacent CLI tools and plugin metadata for alinaos-org/nix-openclaw and openclaw-nix. It started from openclaw/nix-openclaw-tools; that repository is a reference only (read it for ideas, never send it changes), and nothing here depends on it.
 
 ## Boundary Model
 

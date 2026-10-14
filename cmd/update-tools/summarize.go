@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/openclaw/nix-openclaw-tools/internal"
+	"github.com/alinaos-org/nix-openclaw-tools/internal"
 )
 
 func updateSummarize(repoRoot string) error {

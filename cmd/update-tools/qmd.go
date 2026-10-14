@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/openclaw/nix-openclaw-tools/internal"
+	"github.com/alinaos-org/nix-openclaw-tools/internal"
 )
 
 func fetchText(url string) (string, error) {

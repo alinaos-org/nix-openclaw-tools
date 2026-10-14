@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/openclaw/nix-openclaw-tools/internal"
+	"github.com/alinaos-org/nix-openclaw-tools/internal"
 )
 
 type toolUpdate struct {
